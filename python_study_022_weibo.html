@@ -1,0 +1,189 @@
+<html>
+  <head>
+  <meta charset="utf-8">
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+	    google.setOnLoadCallback(drawChart2);
+	  
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'weibo_cate'],
+          ['美食类',80],
+          ['教育类',41],
+          ['医疗类',19],
+          ['购物类',18],
+          ['美妆类',6],
+          ['旅游类',10],
+          ['娱乐类',14],
+          ['医疗类',8],
+          ['不良习惯类',6],
+          ['生活类',8],
+          ['运动类',1],
+          ['快递类',4],
+          ['酒店类',3],
+          ['公安类',2],
+          ['推销类',4],
+        ]);
+
+        var options = {
+          title: '原创微博分类明细',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+	  
+	        function drawChart2() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'express'],
+          ['[爱你]', 25],
+          ['[星星]', 25],
+          ['[微笑]', 18],
+          ['[心]', 17],
+          ['[生病]', 17],
+          ['[拜拜]', 18],
+          ['[困]', 14],
+          ['[围观]', 13],
+          ['[怒骂]', 12],
+          ['[害羞]', 12],
+          ['[鼓掌]', 10],
+          ['[哈哈]', 9],
+          ['[馋嘴]', 8],
+          ['[哼]', 8],
+          ['[下]', 7],
+          ['[飞吻]', 7],
+          ['[眼泪]', 7],
+          ['[笑cry]', 7],
+          ['[失望]', 7],
+          ['[蛋糕]', 7],
+          ['[摊手]', 7],
+          ['[闭眼]', 6],
+          ['[嘻嘻]', 6],
+          ['[呵呵]', 6],
+          ['[太阳]', 6],
+          ['[抓狂]', 5],
+          ['[下雨]', 5],
+          ['[半星]', 5],
+          ['[偷笑]', 5],
+          ['[噢耶]', 5],
+          ['[doge]', 5],
+          ['[哆啦A梦微笑]', 4],
+          ['[微风]', 4],
+          ['[月亮]', 4],
+          ['[开心]', 4],
+          ['[喵喵]', 4],
+          ['[花心]', 4],
+          ['[草尼玛]', 4],
+          ['[太开心]', 4],
+        ]);
+
+        var options = {
+          title: '最爱使用表情（使用次数超过4）',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d2'));
+        chart.draw(data, options);
+      }
+      google.setOnLoadCallback(drawVisualization);
+    </script>
+  </head>
+  <body>
+    <div id="piechart_3d" style="width: 1800px; height: 1000px;"></div>
+    <div id="piechart_3d2" style="width: 1800px; height: 1000px;"></div>
+    <div> 
+    <table id="chartData" align="left" style="width: 1000px; height: 1000px;">
+      <tr>
+        <th align="center">微博中出现次数最多的词语</th><th align="center">次数</th>
+      </tr>
+    <tr style="color:#194E9C">
+        <td width="100" align="center">一个</td><td width="100" align="center">57</td>
+      </tr>
+      <tr style="color:#194E9C">
+        <td width="100" align="center">就是</td><td width="100" align="center">57</td>
+      </tr>
+      <tr style="color:#194E9C">
+        <td width="100" align="center">没有</td><td width="100" align="center">54</td>
+      </tr>
+      <tr style="color:#194E9C">
+        <td width="100" align="center">今天</td><td width="100" align="center">50</td>
+      </tr>
+      <tr style="color:#194E9C">
+        <td width="100" align="center">这个</td><td width="100" align="center">41</td>
+      </tr>
+      <tr style="color:#194E9C">
+        <td width="100" align="center">南昌</td><td width="100" align="center">41</td>
+      </tr>
+      <tr style="color:#194E9C">
+        <td width="100" align="center">什么</td><td width="100" align="center">38</td>
+      </tr>
+      <tr style="color:#194E9C">
+        <td width="100" align="center">自己</td><td width="100" align="center">34</td>
+      </tr>
+      <tr style="color:#194E9C">
+        <td width="100" align="center">还是</td><td width="100" align="center">33</td>
+      </tr>
+      <tr style="color:#194E9C">
+        <td width="100" align="center">打卡</td><td width="100" align="center">32</td>
+      </tr>
+      <tr style="color:#194E9C">
+        <td width="100" align="center">这么</td><td width="100" align="center">32</td>
+      </tr>
+      <tr style="color:#194E9C">
+        <td width="100" align="center">喜欢</td><td width="100" align="center">32</td>
+      </tr>
+      <tr style="color:#194E9C">
+        <td width="100" align="center">这里</td><td width="100" align="center">32</td>
+      </tr>
+      <tr style="color:#194E9C">
+        <td width="100" align="center">七点</td><td width="100" align="center">32</td>
+      </tr>
+      <tr style="color:#194E9C">
+        <td width="100" align="center">大家</td><td width="100" align="center">31</td>
+      </tr>
+      <tr style="color:#194E9C">
+        <td width="100" align="center">我们</td><td width="100" align="center">29</td>
+      </tr>
+      <tr style="color:#194E9C">
+        <td width="100" align="center">还有</td><td width="100" align="center">29</td>
+      </tr>
+      <tr style="color:#194E9C">
+        <td width="100" align="center">不是</td><td width="100" align="center">29</td>
+      </tr>
+      <tr style="color:#194E9C">
+        <td width="100" align="center">现在</td><td width="100" align="center">29</td>
+      </tr>
+      <tr style="color:#194E9C">
+        <td width="100" align="center">不是</td><td width="100" align="center">28</td>
+      </tr>
+      <tr style="color:#194E9C">
+        <td width="100" align="center">知道</td><td width="100" align="center">28</td>
+      </tr>
+      <tr style="color:#194E9C">
+        <td width="100" align="center">时候</td><td width="100" align="center">28</td>
+      </tr>
+      <tr style="color:#194E9C">
+        <td width="100" align="center">真的</td><td width="100" align="center">28</td>
+      </tr>
+      <tr style="color:#194E9C">
+        <td width="100" align="center">江西师范大学</td><td width="100" align="center">24</td>
+      </tr>
+      <tr style="color:#194E9C">
+        <td width="100" align="center">微博</td><td width="100" align="center">23</td>
+      </tr>
+      <tr style="color:#194E9C">
+        <td width="100" align="center">感觉</td><td width="100" align="center">30</td>
+      </tr>
+      <tr style="color:#194E9C">
+        <td width="100" align="center">可以</td><td width="100" align="center">23</td>
+      </tr>
+      <tr style="color:#194E9C">
+        <td width="100" align="center">晚安</td><td width="100" align="center">20</td>
+      </tr>
+    </table>
+  </div> 
+  </body>
+</html>
