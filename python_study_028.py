@@ -10,10 +10,17 @@ while True:
         m = int(raw_input())
         d = []
         for i in range(m):
+<<<<<<< HEAD
             d.append(map(int,raw_input().split()))
         print d
         d.sort()
         for  j in d:
             print  j
+=======
+            d.append(raw_input())
+        d.sort()
+        for  j in d:
+            print j
+>>>>>>> origin/master
     except:
         break

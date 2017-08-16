@@ -17,6 +17,11 @@ while True:
             if numlist[j] !=minlist:
                 resullt.append(t[j])
         resullt = ''.join(resullt)
+<<<<<<< HEAD
     except:
         print resullt
+=======
+        print resullt
+    except:
+>>>>>>> origin/master
         break
