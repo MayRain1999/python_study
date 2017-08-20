@@ -13,7 +13,7 @@ def trans(num, x):
         else:
             return 0
     else:
-        for i in xrange(len(x)):
+        for i in range(len(x)):
             a = x[i]
             b = x[:]
             b.pop(i)
@@ -26,9 +26,9 @@ while True:
         nums = raw_input().split()
         num = [float(x) for x in nums]
         total = trans(24.0, num)
-        if total ==0:
-            print False
+        if total == 0 :
+            print 'false'
         else:
-            print True
+            print  'true'
     except:
         break
