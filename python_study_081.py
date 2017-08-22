@@ -22,4 +22,3 @@ while True:
         print day_number
     except:
         break
-
