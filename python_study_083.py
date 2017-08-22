@@ -10,7 +10,7 @@
 while True:
     try:
         m = int(raw_input())
-        num = m**2 - n + 1
+        num = m**2 - m + 1
         string = str(num)
         for i in range(1,m):
             num = num + 2
