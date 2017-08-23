@@ -24,6 +24,6 @@ pre_station = [x for x in row_2.split(" ")]  # 待进站的车辆
 in_station = []  # 待出站车辆
 after_station = []  # 出站后的车辆
 handle(pre_station, in_station, after_station)
-result.sort( )  # 要字典序输出，排个序咯
+result.sort( )  # 要字典序输出
 for rs in result:
     print rs
