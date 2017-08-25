@@ -4,6 +4,7 @@
 @file:python_study_090.py
 @time:2017/8/24  21:27
 """
+# 字符串匹配
 while True:
     try:
         short_string = raw_input()
