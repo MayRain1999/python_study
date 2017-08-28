@@ -22,17 +22,3 @@ while True:
                 result.append(m)
         for i in result:
             print i,
-=======
-# -*- coding:utf-8 -*-
-"""
-@author:Xiaoping
-@file:python_study_092.py
-@time:2017/8/25  17:29
-"""
-# 二维数组操作
-while True:
-    try:
-
->>>>>>> Stashed changes
-    except:
-        break
