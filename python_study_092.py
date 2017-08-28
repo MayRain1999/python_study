@@ -21,3 +21,5 @@ while True:
                 result.append(m)
         for i in result:
             print i,
+    except:
+        break
