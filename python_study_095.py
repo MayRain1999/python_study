@@ -21,6 +21,7 @@ def long_Fibonacci (n ):
         fibNminusTwo = fibNminusOne
         fibNminusOne = fibN
     return fibN
+    #返回这个数字 进行循环
 
 while True:
     try:
