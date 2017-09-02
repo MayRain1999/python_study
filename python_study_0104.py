@@ -5,6 +5,7 @@
 @time:2017/9/2  11:47
 """
 #24点
+#
 try:
     while 1:
         a = raw_input()
