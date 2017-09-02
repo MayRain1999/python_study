@@ -5,6 +5,7 @@
 @time:2017/9/2  11:55
 """
 #合法ip
+#
 while True:
     try:
         inIP= raw_input().split('.')
