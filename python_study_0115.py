@@ -156,6 +156,24 @@ elif len(book_arr) == 5:
     if book_C !="C":
         print "Error: the booking is invalid!"
     else:
+        if book_area == "A":
+            for i in range(len(book_A)):
+                if user_id == i[0] and  book_day == i[1] and book_time ==i[2] :
+                    book_cost = book_cost *0.5
+        elif book_area == "B":
+            for i in range(len(book_B)):
+                if user_id == i[0] and book_day == i[1] and book_time == i[2]:
+                    book_cost = book_cost * 0.5
+        elif book_area == "C":
+            for i in range(len(book_C)):
+                if user_id == i[0] and book_day == i[1] and book_time == i[2]:
+                    book_cost = book_cost * 0.5
+        elif book_area == "D":
+            for i in range(len(book_D)):
+                if user_id == i[0] and book_day == i[1] and book_time == i[2]:
+                    book_cost = book_cost * 0.5
+        else:
+            print "Error: the booking is invalid!"
 
 
 else:
