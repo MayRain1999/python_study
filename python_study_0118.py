@@ -13,7 +13,7 @@ while True:
         if y>=x:
             if s>=t:
                 res = h
-            else:
+            else:       
                 res = s*x
         else:
             if s>=t:
