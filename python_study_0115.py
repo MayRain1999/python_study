@@ -13,14 +13,6 @@ from datetime import datetime,date
 #读取输入
 book_arr = raw_input().split()
 
-
-#判断是不是合法的输入
-# def book_input(book_arr)
-
-#收费标准
-weekday_cost=[30, 50, 80, 60]
-weekend_cost=[40, 50, 60]
-
 #场地的预订和收入
 book_A = []
 book_B = []
@@ -38,7 +30,6 @@ if len(book_arr) == 4:
     # print book_day
     # print book_time
     # print book_area
-
     #判断预订的时间是周一到周五还是周末
     #把字符串转换成时间格式
     book_day = datetime.strptime(book_day1, "%Y-%m-%d").strftime("%w")
@@ -144,8 +135,10 @@ if len(book_arr) == 4:
         book_C.append([user_id,book_day1, book_time, book_area, book_cost])
     elif book_area =="D":
         book_D.append([user_id,book_day1, book_time, book_area, book_cost])
+
     else:
         print "Error: the booking is invalid!"
+    print book_A
 
 elif len(book_arr) == 5:
     user_id = book_arr[0]
@@ -174,8 +167,6 @@ elif len(book_arr) == 5:
                     book_cost = book_cost * 0.5
         else:
             print "Error: the booking is invalid!"
-
-
 else:
     #如果是非法输入 则输出错误提示
     print "Error: the booking is invalid!"
