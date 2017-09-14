@@ -239,7 +239,7 @@ def isLegal(bookInfo):
         return False
 
 
-if __name__ == "__main__":
+
     while True:
         bookInfo = raw_input()
         if bookInfo == "exit":
