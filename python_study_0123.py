@@ -8,15 +8,13 @@
 
 def josephus(n, k):
     #生成一个列表
-    listN = range(n)
+    listN = range(1,n+1)
     k  = k - 1
     m = k%n
-    print m
     while(len(listN) > 2):
         del listN[k]
         k = (k +m )%len(listN)
-        # print  k
-        print listN
+        print listN,k,len(listN)
     return listN[0],listN[1]
 
 if __name__ == "__main__":
