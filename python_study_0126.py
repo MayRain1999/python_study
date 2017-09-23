@@ -4,7 +4,7 @@
 @file:python_study_0126.py
 @time:2017/9/21  20:16
 """
-# 二叉树遍历  前序遍历
+# 二叉树遍历  前序遍历 \\\
 class node():
     def __init__(self, k=None, l=None, r=None):
         self.key = k
